@@ -23,7 +23,7 @@ const Weather = ({ weatherInfo }) => {
     <section className="text-center">
       <h2 className="text-3xl font-semibold text-gray-800 mb-4">
         {weatherInfo?.name}, {weatherInfo?.sys?.country}{" "}
-        {/* Added country name */}
+        {/* Added country Name part */}
       </h2>
 
       <section className="grid gap-4 sm:grid-cols-[auto_auto]">
