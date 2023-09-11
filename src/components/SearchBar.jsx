@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 
 const SearchBar = ({ onSearch }) => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -11,7 +11,7 @@ const SearchBar = ({ onSearch }) => {
     <div className="text-center mt-4">
       <input
         type="text"
-        placeholder="Enter country name"
+        placeholder="Enter Capital Name"
         value={searchQuery}
         onChange={(e) => setSearchQuery(e.target.value)}
         className="border p-2 rounded-md"
