@@ -98,6 +98,9 @@ const Weather = ({ weatherInfo, selectedCountry }) => {
       >
         TEMPERATURE UNIT
       </button>
+      <footer className="text-center text-xs mt-6 text-gray-500">
+        WEB DEVELOPER SHANDON V
+      </footer>
     </section>
   );
 };
