@@ -32,7 +32,7 @@ const Weather = ({ weatherInfo, selectedCountry }) => {
   }, [selectedCountry]);
 
   return (
-    <section className="text-center">
+    <section className="text-center  ">
       <h2 className="text-3xl font-semibold text-gray-800 mb-4">
         {weatherInfo?.name}, {weatherInfo?.sys?.country}
       </h2>
@@ -44,7 +44,7 @@ const Weather = ({ weatherInfo, selectedCountry }) => {
         </div>
       )}
 
-      <section className="grid gap-4 sm:grid-cols-[auto_auto]">
+      <section className="grid gap-4 sm:grid-cols-[auto_auto] lg:grid-cols-[auto_auto auto]">
         <section className="bg-white/60 p-2  rounded-2xl grid grid-cols-2 items-center">
           <h4 className="col-span-2">{weatherInfo?.weather[0].description} </h4>
           <span className="text-4xl font-semibold text-gray-600 animate-pulse">
@@ -65,9 +65,9 @@ const Weather = ({ weatherInfo, selectedCountry }) => {
             } p-2`}
           />
         </section>
-
+        <br></br>
         <section>
-          <section className="bg-white bg-opacity-60 p-4 py-6 rounded-2xl grid grid-cols-3 items-center sm:grid-cols-1 shadow-md">
+          <section className="bg-white bg-opacity-60 p-4 py-6 rounded-2xl grid grid-cols-3 items-center sm:grid-cols-1 lg:grid-cols-3 shadow-md">
             <article className="flex gap-2 items-center">
               <div className="w-[18px]">
                 <img src={"/images/img1.png"} alt="" />
