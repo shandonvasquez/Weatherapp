@@ -7,6 +7,12 @@ const SearchBar = ({ onSearch }) => {
     onSearch(searchQuery);
   };
 
+  const handleKeyDown = (e) => {
+    if (e.key === "Enter") {
+      handleSearch();
+    }
+  };
+
   return (
     <div className="text-center mt-4">
       <input
@@ -14,6 +20,7 @@ const SearchBar = ({ onSearch }) => {
         placeholder="Enter Capital Name"
         value={searchQuery}
         onChange={(e) => setSearchQuery(e.target.value)}
+        onKeyDown={handleKeyDown}
         className="border p-2 rounded-md"
       />
       <button

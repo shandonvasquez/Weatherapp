@@ -91,9 +91,10 @@ const Weather = ({ weatherInfo, selectedCountry }) => {
           </section>
         </section>
       </section>
+
       <button
         onClick={handleUnitTempChange}
-        className="px-6 py-3 bg-gray-800 text-gray-300 hover:bg-gray-700 hover:text-gray-200 transform hover:scale-105 rounded-md shadow-lg focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-opacity-50"
+        className="mt-2 px-6 py-3 bg-gray-800 text-gray-300 hover:bg-gray-700 hover:text-gray-200 transform hover:scale-105 rounded-md shadow-lg focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-opacity-50"
       >
         TEMPERATURE UNIT
       </button>
